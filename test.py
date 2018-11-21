@@ -8,6 +8,14 @@ print("hola mundo ")
 
 x=np.zeros((2,2),float)
 print(x)
+z=np.shape(x)
+print(z)
+def rellena(x):
+    for i in range(z[0]):
+        x[i][i]=1#np.random.random()
+    return x
+
+print(rellena(x))
 
 x1=np.linspace(-1,1,100)
 def f(x):
